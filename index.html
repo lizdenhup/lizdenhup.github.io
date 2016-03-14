@@ -36,6 +36,19 @@ account. The workout table has keys for the date/time of the workout, distance, 
 created the workout instance. 
 </p>
 
+<p>
+  I created three controllers, a main controller in which I enabled sessions and defined two helper methods (#logged_in? and #current_user)
+  and two controllers, one for users and one for workouts, which inherited from my main application controller. I like splitting the
+  controllers in this way because it contributes to code readability and follows the single responsibility principle. I use the two
+  conrollers to build out that basic Sinatra CRUD actions (create, read, update, and destroy). Users can sign up for an account, add and
+  persist workouts, view their workouts over time, edit or delete a specific workout. 
+</p>
+
+<p>
+  I added some basic CSS styling with Bootstrap. I'm not 100% satisfied with the way the app looks yet, but overall I am satisfied
+  that my app has has the basic functionality I wanted it to have. For future updates I plan to improve the front-end styling,
+  and incorporate responsive design elements. Feel free to <a href="https://github.com/lizdenhup/runninglog">check out my code</a> on Github. 
+</p>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
