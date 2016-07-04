@@ -11,30 +11,40 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Lizdenhup.GitHub.io</h1>
-        <p></p>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Lizdenhup.GitHub.io</h1>
+      <p></p>
 
+      <p class="view"><a href="https://github.com/lizdenhup">View My GitHub Profile</a></p>
 
-        <p class="view"><a href="https://github.com/lizdenhup">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>
+    </header>
 
 <h3>
-<class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>Creating an App with Sinatra - March 14, 2016</h3>
+<class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>Writing and publishing my first Ruby Gem - July 4, 2016</h3>
 
-<p>Recently I had the opportunity to create a Sinatra app for the coding bootcamp I'm enrolled in. Since running is one of my interests 
-outside of coding, I decided to create a basic Sinatra app to keep track of a user's workout activity. To do this I used the classic
-MVC (models, views, controllers) design pattern which is oft used in these kinds of applications. I used ActiveRecord to make two databases,
-one for user data and one for workout data. The users table stores an individual's username, email, and an encrypted password for their
-account. The workout table has keys for the date/time of the workout, distance, intensity, and a foreign key corresponding to the user who
-created the workout instance. 
-</p>
+<p>
+  Yesterday I finished creating my first Ruby gem - a news scraping gem that uses Nokogiri to grab each day's headlines off of Wikinews. My gem runs in the terminal and offers the user the option of scraping an entire article. This was my first time building out a CLI (command line interface) gem. Now that I've built my first CLI gem, I'm excited to use my skills to build other CLI gems! I really want to try my hand at scraping the New York Times or building gems that quickly scrape information from academic papers.  
+
+<p>
+  I have a few more updates to make to my code - for example, I want to update the program's readme file to be more in line with what I've seen in Ruby style guides. Overall, I'm pretty pleased with what I learned from doing this project, and I'm excited to publish my gem on Rubygems.org so that others can use this scraper, if they like. You can check out my code at <a href="https://github.com/lizdenhup/cli-gem">. 
+
+<br>
+<br> 
+
+<h3>
+  <class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>Creating an App with Sinatra - March 14, 2016
+</h3>
+
+<p>
+  Recently I had the opportunity to create a Sinatra app for the coding bootcamp I'm enrolled in. Since running is one of my interests 
+  outside of coding, I decided to create a basic Sinatra app to keep track of a user's workout activity. To do this I used the classic
+  MVC (models, views, controllers) design pattern which is oft used in these kinds of applications. I used ActiveRecord to make two databases,
+  one for user data and one for workout data. The users table stores an individual's username, email, and an encrypted password for their
+  account. The workout table has keys for the date/time of the workout, distance, intensity, and a foreign key corresponding to the user who
+  created the workout instance. 
 
 <p>
   I created three controllers, a main controller in which I enabled sessions and defined two helper methods (#logged_in? and #current_user)
@@ -42,18 +52,16 @@ created the workout instance.
   controllers in this way because it contributes to code readability and follows the single responsibility principle. I use the two
   conrollers to build out that basic Sinatra CRUD actions (create, read, update, and destroy). Users can sign up for an account, add and
   persist workouts, view their workouts over time, edit or delete a specific workout. 
-</p>
 
 <p>
   I added some basic CSS styling with Bootstrap. I'm not 100% satisfied with the way the app looks yet, but overall I am satisfied
   that my app has has the basic functionality I wanted it to have. For future updates I plan to improve the front-end styling,
   and incorporate responsive design elements. Feel free to <a href="https://github.com/lizdenhup/runninglog">check out my code</a> on Github. 
-</p>
+
 <br>
 <br>
 
-    </div>
-
+  </div>
     
   </body>
 </html>
